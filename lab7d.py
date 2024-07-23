@@ -19,9 +19,9 @@ class Time:
 
     def sum_times(self, t2):
         """Add two time objests and return the sum."""
-        self_sec = self.time_to_sec()
-        t2_sec = t2.time_to_sec()
-        sum = sec_to_time(self_sec + t2_sec)
+        s_secs = self.time_to_sec()
+        new_secs = t2.time_to_sec()
+        sum = sec_to_time(s_secs + new_secs)
         return sum
 
     def change_time(self, seconds):
